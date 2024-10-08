@@ -60,7 +60,7 @@ body
   justify-content: space-between;
 
    height: 100vh;
-   background: url(Purple\ Illustrated\ Mountain\ Desktop\ Wallpaper.png) no-repeat; 
+   background: url no-repeat; 
    background-size: cover;
    background-position: center;
    display: flex;
@@ -141,7 +141,28 @@ body
     box-shadow: 0 0 5px #0ef,
     0 0 25px #0ef;
 }
+.btn-box1 {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 16px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    animation: slideTop 1s ease forwards ;
+    animation-delay: 2s;
+    box-shadow: 0 0 5px #0ef,
+    0 0 25px #0ef;
+}
 .btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+.btn-box1:hover {
     box-shadow: 0 0 5px cyan,
     0 0 25px cyan, 0 0 50px cyan,
     0 0 100px cyan, 0 0 200px cyan;
@@ -343,13 +364,16 @@ section{
     width: 60%;
 }
 .progress-line.javascript span{
-    width: 85%;
+    width: 70%;
 }
-.progress-line.python span{
+.progress-line.php span{
+    width: 55%;
+}
+.progress-line.wordpress span{
+    width: 95%;
+}
+.progress-line.sql span{
     width: 50%;
-}
-.progress-line.react span{
-    width: 75%;
 }
 
 .progress-line span::after{
@@ -368,16 +392,19 @@ section{
     content: "90%";
 }
 .progress-line.css span::after{
-    content: "60%";
+    content: "70%";
 }
 .progress-line.javascript span::after{
-    content: "85%";
+    content: "70%";
 }
-.progress-line.python span::after{
+.progress-line.php span::after{
+    content: "55%";
+}
+.progress-line.wordpress span::after{
+    content: "95%";
+}
+.progress-line.sql span::after{
     content: "50%";
-}
-.progress-line.react span::after{
-    content: "75%";
 }
 .progress-line span::before{
     content: "";
